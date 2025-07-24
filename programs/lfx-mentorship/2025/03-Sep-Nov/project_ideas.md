@@ -47,6 +47,51 @@ Jonah Kowall (@jkowall, jkowall@kowall.net)
 Yuri Shkuro (@yurishkuro, github@ysh.us)
 Upstream Issue: https://github.com/jaegertracing/jaeger/issues/7327
 
+### CloudNativePG
+
+#### Rebuilding CloudNativePG Documentation for Multi-Version Support with Docusaurus
+
+- Description: The current documentation of CloudNativePG (a Kubernetes-native
+  Postgres operator) is statically built using `mkdocs` from Markdown sources,
+  which must live with the rest of the source code as they are part of it. We
+  want to modernise this process and introduce multi-version support, helping
+  users find accurate information for the version they are running in production.
+  This project aims to rebuild the documentation site using Docusaurus
+  (preferred) or an equivalent static site generator to enable multi-version
+  documentation and version selection. Additionally, any initiatives that improve
+  content structure, navigation, searchability, and clarity are welcome, provided
+  they enhance logical flow and maintainability while aligning with CNCF and user
+  expectations. The documentation is hosted on GitHub Pages under the
+  CloudNativePG website domain.
+
+- Expected Outcome:
+
+    - Incremental set of pull requests (PRs) with:
+
+       - Site built with Docusaurus (or equivalent) with version selector working.
+       - Content restructured for clarity and easier navigation.
+       - Clean, consistent navigation structure and enhanced search capabilities.
+       - Staging website capabilities.
+       - Deployment workflow to GitHub Pages using Dagger and GitHub Actions.
+
+    - A clear contributor guide explaining how maintainers can add or update
+      documentation for each version in the future.
+
+- Recommended Skills:
+
+    - Markdown
+    - Git and GitHub workflows
+    - Static site generators (preferably Docusaurus, Hugo, or MkDocs)
+    - Basic YAML/TOML configuration
+    - Familiarity with Kubernetes, PostgreSQL and CloudNativePG
+
+- Mentor(s):
+  - Gabriele Bartolini (@gbartolini, gabriele.bartolini@enterprisedb.com)
+  - Francesco Canovai (@fcanovai, francesco.canovai@enterprisedb.com)
+  - ...
+
+- Upstream Issue: https://github.com/cloudnative-pg/cloudnative-pg/issues/8122
+
 ### OpenCost
 
 #### Develop MCP Server for Agentic AI interaction with OpenCost
